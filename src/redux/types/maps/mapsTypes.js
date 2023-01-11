@@ -1,0 +1,7 @@
+export const START_GET_MAPS = "START_GET_MAPS";
+export const ERROR_GET_MAPS = "ERROR_GET_MAPS";
+export const SUCCESSFUL_GET_MAPS = "SUCCESSFUL_GET_MAPS";
+
+export const START_GET_MAP = "START_GET_MAP";
+export const ERROR_GET_MAP = "ERROR_GET_MAP";
+export const SUCCESSFUL_GET_MAP = "SUCCESSFUL_GET_MAP";

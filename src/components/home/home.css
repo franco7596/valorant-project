@@ -1,0 +1,84 @@
+.home-section-maps,
+.home-section-agents {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.home-section-maps {
+	background-color: var(--back-ground-dark-color);
+	height: 800px;
+}
+.home-section-maps-info,
+.home-section-agent-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 40px;
+}
+.home-section-maps-h3 {
+	color: var(--white-color);
+	text-align: center;
+}
+.home-section-maps-p,
+.home-section-agent-p {
+	font-size: medium;
+	font-family: "Courier New", Courier, monospace;
+	margin-top: 20px;
+	padding-left: 30px;
+}
+.home-section-maps-p {
+	color: var(--white-color);
+}
+.home-section-maps-button {
+	height: 50px;
+	width: 200px;
+	border: 0;
+	padding: 10px;
+	color: var(--white-color);
+	text-transform: uppercase;
+	background: linear-gradient(
+			-60deg,
+			var(--red-color) 50%,
+			var(--black-color) 50%
+		)
+		right;
+	background-size: 250%;
+	transition: 0.5s ease-out;
+}
+
+.home-section-maps-button:hover {
+	background-position: left;
+}
+
+.home-section-agents {
+	background-color: var(--back-ground-ligth-color);
+	height: fit-content;
+}
+.home-section-agents .carousel {
+	order: -1;
+}
+.home-section-agent-info {
+	align-self: center;
+}
+.home-section-agent-h3 {
+	color: var(--black-color);
+	text-align: center;
+}
+.home-section-agent-p {
+	color: var(--black-color);
+}
+
+@media (min-width: 800px) {
+	.home-section-maps,
+	.home-section-agents {
+		display: grid;
+		align-items: stretch;
+	}
+	.home-section-maps {
+		grid-template-columns: 2fr 4fr;
+	}
+	.home-section-agents {
+		grid-template-columns: 4fr 2fr;
+	}
+}

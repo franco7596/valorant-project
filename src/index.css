@@ -1,3 +1,7 @@
 :root {
-  --back-ground-dark-color: #27272fff;
+	--back-ground-dark-color: #27272fff;
+	--red-color: #ff4655;
+	--black-color: #0f1923;
+	--white-color: #fff;
+	--back-ground-ligth-color: #ece8e1;
 }
