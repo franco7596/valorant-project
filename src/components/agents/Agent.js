@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { startGetAgent } from "../../redux/actions/agentsAction";
+import Loading from "../loading/Loading";
 import "./agent.css";
 
 export default function Agent() {
@@ -26,62 +27,60 @@ export default function Agent() {
 		}
 	}, [agentSelected]);
 
-	return (
-		agentSelected && (
-			<div className="agent">
-				<div className="agent-container">
-					<div className="agent-rol">
-						<h4 className="agent-role-h4">// ROLE</h4>
-						<div className="agent-role-type">
-							<h5 className="agent-role-h5">
-								{agentSelected.role.displayName}
-							</h5>
-							<img
-								src={agentSelected.role.displayIcon}
-								className="agent-role-image"
-							/>
-						</div>
-						<p className="agent-role-p">{agentSelected.role.description}</p>
+	return agentSelected && agentSelected.uuid === params.idAgent ? (
+		<div className="agent">
+			<div className="agent-container">
+				<div className="agent-rol">
+					<h4 className="agent-role-h4">// ROLE</h4>
+					<div className="agent-role-type">
+						<h5 className="agent-role-h5">{agentSelected.role.displayName}</h5>
+						<img
+							src={agentSelected.role.displayIcon}
+							className="agent-role-image"
+						/>
 					</div>
-					<img
-						src={agentSelected["bustPortrait"]}
-						style={backImage}
-						className="agent-image"
-					/>
-					<div className="agent-biography">
-						<h5 className="agent-biography-h5">// BIOGRAPHY</h5>
-						<h4 className="agent-biography-h4">{agentSelected.displayName}</h4>
-						<p className="agent-biography-p">{agentSelected.description}</p>
-					</div>
+					<p className="agent-role-p">{agentSelected.role.description}</p>
 				</div>
-				{/* <div className="agent-change-color" /> */}
-				<div className="agent-powers">
-					<h4 className="agent-powers-h4">SPECIAL ABILITIEAS</h4>
-					{agentSelected.abilities.map((abiliti) => (
-						<div
-							className={
-								abilitiSelected.slot === abiliti.slot
-									? "agent-powers-button-selected"
-									: "agent-powers-button"
-							}
-							type="button"
-							key={abiliti.slot}
-							onClick={() => setAbilitiSelected(abiliti)}
-						>
-							<img
-								src={abiliti.displayIcon}
-								className="agent-power-icon grayscale "
-							/>
-						</div>
-					))}
-					<div className="agent-powers-info">
-						<h5 className="agent-powers-info-h5">
-							{abilitiSelected.displayName}
-						</h5>
-						<p>{abilitiSelected.description}</p>
-					</div>
+				<img
+					src={agentSelected["bustPortrait"]}
+					style={backImage}
+					className="agent-image"
+				/>
+				<div className="agent-biography">
+					<h5 className="agent-biography-h5">// BIOGRAPHY</h5>
+					<h4 className="agent-biography-h4">{agentSelected.displayName}</h4>
+					<p className="agent-biography-p">{agentSelected.description}</p>
 				</div>
 			</div>
-		)
+			{/* <div className="agent-change-color" /> */}
+			<div className="agent-powers">
+				<h4 className="agent-powers-h4">SPECIAL ABILITIEAS</h4>
+				{agentSelected.abilities.map((abiliti) => (
+					<div
+						className={
+							abilitiSelected.slot === abiliti.slot
+								? "agent-powers-button-selected"
+								: "agent-powers-button"
+						}
+						type="button"
+						key={abiliti.slot}
+						onClick={() => setAbilitiSelected(abiliti)}
+					>
+						<img
+							src={abiliti.displayIcon}
+							className="agent-power-icon grayscale "
+						/>
+					</div>
+				))}
+				<div className="agent-powers-info">
+					<h5 className="agent-powers-info-h5">
+						{abilitiSelected.displayName}
+					</h5>
+					<p>{abilitiSelected.description}</p>
+				</div>
+			</div>
+		</div>
+	) : (
+		<Loading />
 	);
 }

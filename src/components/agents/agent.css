@@ -24,7 +24,8 @@
 }
 .agent-role-h4 {
 	color: var(--back-ground-ligth-color);
-	font-size: 12pt;
+	font-size: var(--font-size-h4);
+	font-weight: var(--font-weight-h4);
 }
 .agent-role-h5 {
 	color: var(--back-ground-ligth-color);
@@ -48,15 +49,16 @@
 }
 .agent-biography-h5 {
 	color: var(--back-ground-ligth-color);
-	font-size: 12pt;
+	font-size: var(--font-size-h5);
 }
 .agent-biography-h4 {
 	color: var(--back-ground-ligth-color);
-	font-size: 20pt;
+	font-size: var(--font-size-h4);
 	font-weight: bold;
 }
 
 .agent-biography-p {
+	font-size: var(--font-size-p);
 	color: var(--back-ground-ligth-color);
 }
 
@@ -83,9 +85,9 @@
 		". infoPower";
 }
 .agent-powers-h4 {
-	font-family: Tungsten-Bold, arial, georgia, sans-serif;
-	font-size: 20pt;
-	font-weight: bold;
+	font-family: var(--font-family-h4);
+	font-size: var(--font-size-h4);
+	font-weight: var(--font-weight-h4);
 	grid-area: header;
 	align-self: center;
 	justify-self: center;
@@ -144,8 +146,9 @@
 }
 .agent-powers-info-h5 {
 	text-align: center;
-	font-size: 17pt;
-	font-weight: 500;
+	font-family: var(--font-family-h5);
+	font-size: var(--font-size-h5);
+	font-weight: var(--font-weight-h5);
 }
 
 @media (min-width: 780px) {

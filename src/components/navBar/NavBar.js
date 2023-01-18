@@ -29,7 +29,7 @@ export default function NavBar() {
 					position: "fixed",
 					top: 0,
 					left: 0,
-					zIndex: 10,
+					zIndex: 100,
 				}}
 			>
 				<ThemeProvider theme={darkTheme}>
@@ -44,9 +44,6 @@ export default function NavBar() {
 							/>
 							<h1 className="nav_bar-h1">Valorant Game</h1>
 							<div className="nav_bar-buttons">
-								<Button color="inherit">
-									<Brightness4Icon />
-								</Button>
 								<Button color="inherit">
 									<LinkedInIcon />
 								</Button>

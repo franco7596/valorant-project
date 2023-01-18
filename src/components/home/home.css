@@ -16,24 +16,22 @@
 	align-items: center;
 	padding-top: 40px;
 }
-.home-section-maps-h3 {
-	color: var(--white-color);
-	text-align: center;
-}
-.home-section-maps-p,
-.home-section-agent-p {
-	font-size: medium;
-	font-family: "Courier New", Courier, monospace;
+.home-section-p {
+	font-size: var(--font-size-p);
+	font-family: var(--font-family-p);
+	font-weight: var(--font-weight-p);
 	margin-top: 20px;
 	padding-left: 30px;
 }
-.home-section-maps-p {
+
+.text-white {
 	color: var(--white-color);
 }
-.home-section-maps-button {
+.home-section-button {
 	height: 50px;
 	width: 200px;
 	border: 0;
+	margin: 30px 0 50px 0;
 	padding: 10px;
 	color: var(--white-color);
 	text-transform: uppercase;
@@ -47,7 +45,7 @@
 	transition: 0.5s ease-out;
 }
 
-.home-section-maps-button:hover {
+.home-section-button:hover {
 	background-position: left;
 }
 
@@ -61,12 +59,9 @@
 .home-section-agent-info {
 	align-self: center;
 }
-.home-section-agent-h3 {
-	color: var(--black-color);
-	text-align: center;
-}
-.home-section-agent-p {
-	color: var(--black-color);
+.home-section-team {
+	background-color: var(--back-ground-dark-color);
+	padding-bottom: 100px;
 }
 
 @media (min-width: 800px) {

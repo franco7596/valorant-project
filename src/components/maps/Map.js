@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { startGetMap } from "../../redux/actions/mapsAction";
+import Loading from "../loading/Loading";
 import "./map.css";
 
 export default function Map() {
@@ -13,8 +14,8 @@ export default function Map() {
 	}, []);
 
 	return (
-		<div>
-			{mapSelected && (
+		<div className="map-container">
+			{mapSelected && mapSelected.uuid === params.idMap ? (
 				<div
 					className="map-image"
 					style={{
@@ -24,9 +25,13 @@ export default function Map() {
 						backgroundPosition: "center",
 					}}
 				>
-					<div className="prueba" />
+					<h4 className="map-image-h4">
+						Coordinates: {mapSelected.coordinates}
+					</h4>
+					<h5 className="map-image-h5">Name: {mapSelected.displayName}</h5>
 				</div>
-				// <img src={mapSelected.displayIcon} className="agent-image" />
+			) : (
+				<Loading />
 			)}
 		</div>
 	);

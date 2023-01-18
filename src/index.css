@@ -3,5 +3,19 @@
 	--red-color: #ff4655;
 	--black-color: #0f1923;
 	--white-color: #fff;
+	--green-color: #198754;
+	--ligth-green-color: #d1e7dd;
 	--back-ground-ligth-color: #ece8e1;
+
+	--font-size-h5: 17pt;
+	--font-family-h5: Tungsten-Bold, arial, georgia, sans-serif;
+	--font-weight-h5: 500;
+
+	--font-size-h4: 20pt;
+	--font-family-h4: Tungsten-Bold, arial, georgia, sans-serif;
+	--font-weight-h4: 600;
+
+	--font-size-p: 16pt;
+	--font-family-p: "Courier New", Courier, monospace;
+	--font-weight-p: 300;
 }
