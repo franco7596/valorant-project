@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./teamImages.css";
-export default function TeamImages({ agents }) {
+export default function TeamImages({ agents, changeMidleAgent }) {
 	const [moving, setMoving] = useState(false);
 	const [mouseLastPosition, setMouseLastPosition] = useState(0);
 	const [transform, setTransform] = useState(0);
@@ -9,22 +9,27 @@ export default function TeamImages({ agents }) {
 		{
 			order: 1,
 			scale: 1,
+			id: 4,
 		},
 		{
 			order: 2,
 			scale: 1.5,
+			id: 3,
 		},
 		{
 			order: 3,
 			scale: 2,
+			id: 2,
 		},
 		{
 			order: 4,
 			scale: 1.5,
+			id: 1,
 		},
 		{
 			order: 5,
 			scale: 1,
+			id: 0,
 		},
 	]);
 
@@ -80,8 +85,10 @@ export default function TeamImages({ agents }) {
 		const firstValue = imagesProperties.slice(0, 1);
 		const midleValue = imagesProperties.slice(1, imagesProperties.length - 1);
 		if (rigth) {
+			if (changeMidleAgent) changeMidleAgent(imagesProperties[3].id);
 			setImagesProperties([...midleValue, ...lastValue, ...firstValue]);
 		} else {
+			if (changeMidleAgent) changeMidleAgent(imagesProperties[1].id);
 			setImagesProperties([...lastValue, ...firstValue, ...midleValue]);
 		}
 	};

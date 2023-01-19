@@ -45,7 +45,13 @@ export default function NavBar() {
 							<h1 className="nav_bar-h1">Valorant Game</h1>
 							<div className="nav_bar-buttons">
 								<Button color="inherit">
-									<LinkedInIcon />
+									<a
+										href="https://ar.linkedin.com/in/franco-ribotta-274a211b0?trk=people-guest_people_search-card"
+										target="_blank"
+										className="nav_bar-a"
+									>
+										<LinkedInIcon />
+									</a>
 								</Button>
 								<Button color="inherit">
 									<GitHubIcon />

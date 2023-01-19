@@ -8,8 +8,12 @@
 }
 
 .team_Images-img {
-	cursor: move;
+	cursor: grab;
 	width: auto;
 	height: 200px;
 	position: relative;
+}
+
+.team_Images-img:active {
+	cursor: grabbing;
 }
