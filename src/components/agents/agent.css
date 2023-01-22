@@ -1,167 +1,169 @@
 .agent {
-	overflow: hidden;
-	background-color: var(--back-ground-ligth-color);
+  overflow: hidden;
+  background-color: var(--back-ground-ligth-color);
 }
 .agent-container {
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-	grid-template-rows: repeat(3, 1fr);
-	grid-template-areas:
-		"descripcionTypeRol descripcionTypeRol"
-		"imageAgent imageAgent"
-		"descripcionBiography descripcionBiography";
-	background-color: var(--back-ground-dark-color);
-	height: 100vh;
-	padding: 0 10px 0 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "descripcionTypeRol descripcionTypeRol"
+    "imageAgent imageAgent"
+    "descripcionBiography descripcionBiography";
+  background-color: var(--back-ground-dark-color);
+  padding: 0 10px 0 10px;
 }
 .agent-rol {
-	grid-area: descripcionTypeRol;
-	align-self: center;
+  grid-area: descripcionTypeRol;
+  align-self: center;
 }
 
 .agent-role-type {
-	display: flex;
+  display: flex;
 }
 .agent-role-h4 {
-	color: var(--back-ground-ligth-color);
-	font-size: var(--font-size-h4);
-	font-weight: var(--font-weight-h4);
+  color: var(--back-ground-ligth-color);
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-h4);
 }
 .agent-role-h5 {
-	color: var(--back-ground-ligth-color);
+  color: var(--back-ground-ligth-color);
 }
 .agent-role-image {
-	margin-left: 30px;
-	height: 30px;
-	width: 30px;
+  margin-left: 30px;
+  height: 30px;
+  width: 30px;
 }
 .agent-role-p {
-	margin-top: 10px;
-	color: var(--back-ground-ligth-color);
+  margin-top: 10px;
+  font-size: var(--font-size-p);
+  color: var(--back-ground-ligth-color);
 }
 .agent-image {
-	grid-area: imageAgent;
-	justify-self: center;
-	width: 350px;
+  grid-area: imageAgent;
+  justify-self: center;
+  width: 350px;
 }
 .agent-biography {
-	grid-area: descripcionBiography;
+  grid-area: descripcionBiography;
 }
 .agent-biography-h5 {
-	color: var(--back-ground-ligth-color);
-	font-size: var(--font-size-h5);
+  color: var(--back-ground-ligth-color);
+  font-size: var(--font-size-h5);
 }
 .agent-biography-h4 {
-	color: var(--back-ground-ligth-color);
-	font-size: var(--font-size-h4);
-	font-weight: bold;
+  color: var(--back-ground-ligth-color);
+  font-size: var(--font-size-h4);
+  font-weight: bold;
 }
 
 .agent-biography-p {
-	font-size: var(--font-size-p);
-	color: var(--back-ground-ligth-color);
+  font-size: var(--font-size-p);
+  color: var(--back-ground-ligth-color);
 }
 
 .agent-change-color {
-	background: linear-gradient(
-		rotate(45deg),
-		var(--back-ground-ligth-color) 50%,
-		var(--back-ground-dark-color) 50%
-	);
-	width: 100%;
-	height: 200px;
+  background: linear-gradient(
+    rotate(45deg),
+    var(--back-ground-ligth-color) 50%,
+    var(--back-ground-dark-color) 50%
+  );
+  width: 100%;
+  height: 200px;
 }
 
 .agent-powers {
-	padding: 0 15px 0 15px;
-	display: grid;
-	grid-template-columns: 1fr 5fr;
-	grid-template-rows: repeat(5, 1fr);
-	grid-template-areas:
-		"header header"
-		". infoPower"
-		". infoPower"
-		". infoPower"
-		". infoPower";
+  padding: 0 15px 0 15px;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "header header"
+    ". infoPower"
+    ". infoPower"
+    ". infoPower"
+    ". infoPower";
 }
 .agent-powers-h4 {
-	font-family: var(--font-family-h4);
-	font-size: var(--font-size-h4);
-	font-weight: var(--font-weight-h4);
-	grid-area: header;
-	align-self: center;
-	justify-self: center;
+  font-family: var(--font-family-h4);
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-h4);
+  grid-area: header;
+  align-self: center;
+  justify-self: center;
 }
 
 .agent-powers-button {
-	margin: 20px 0 20px 0;
-	height: 60px;
-	width: 60px;
-	justify-self: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: linear-gradient(
-			-60deg,
-			var(--black-color) 50%,
-			var(--red-color) 50%
-		)
-		right;
-	background-size: 260%;
-	transition: 0.5s ease-out;
+  margin: 20px 0 20px 0;
+  height: 60px;
+  width: 60px;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      -60deg,
+      var(--black-color) 50%,
+      var(--red-color) 50%
+    )
+    right;
+  background-size: 260%;
+  transition: 0.5s ease-out;
 }
 .agent-powers-button:hover {
-	background-position: left;
+  background-position: left;
 }
 .grayscale {
-	filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 .agent-power-icon {
-	height: 25px;
-	width: 25px;
+  height: 25px;
+  width: 25px;
 }
 .agent-powers-button:hover .agent-power-icon {
-	transform: scale(2, 2);
-	transition-duration: 0.5s;
+  transform: scale(2, 2);
+  transition-duration: 0.5s;
 }
 
 .agent-powers-button-selected {
-	height: 60px;
-	width: 60px;
-	justify-self: center;
-	margin: 20px 0 20px 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: var(--red-color);
+  height: 60px;
+  width: 60px;
+  justify-self: center;
+  margin: 20px 0 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--red-color);
 }
 
 .agent-powers-button-selected .agent-power-icon {
-	transform: scale(2, 2);
+  transform: scale(2, 2);
 }
 
 .agent-powers-info {
-	grid-area: infoPower;
-	padding: 10px 20px 0 20px;
+  grid-area: infoPower;
+  padding: 10px 20px 0 20px;
 }
 .agent-powers-info-h5 {
-	text-align: center;
-	font-family: var(--font-family-h5);
-	font-size: var(--font-size-h5);
-	font-weight: var(--font-weight-h5);
+  text-align: center;
+  font-family: var(--font-family-h5);
+  font-size: var(--font-size-h5);
+  font-weight: var(--font-weight-h5);
 }
 
 @media (min-width: 780px) {
-	.agent-container {
-		padding: 0 10px 0 40px;
-		grid-template-rows: repeat(2, 1fr);
-		grid-template-areas:
-			"descripcionTypeRol imageAgent"
-			"descripcionBiography imageAgent";
-	}
-	.agent-image {
-		width: auto;
-		height: 100%;
-		align-self: center;
-	}
+  .agent-container {
+    height: 100vh;
+    padding: 0 10px 0 40px;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "descripcionTypeRol imageAgent"
+      "descripcionBiography imageAgent";
+  }
+  .agent-image {
+    width: auto;
+    height: 80vh;
+    align-self: center;
+  }
 }
