@@ -26,6 +26,8 @@ Whether you are a hardcore gamer or a casual player, this dynamic and interactiv
 
 - Install all necessary dependencies inside the project directory using npm install.
 
+- Finally, start the project with npm start, which will launch the Expo dashboard in the browser.
+
 ## The link to the webpage.:
 
 [Valorant](https://ribotta-franco-valorant.vercel.app/#/)
