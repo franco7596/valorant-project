@@ -25,8 +25,12 @@ https://user-images.githubusercontent.com/54074366/235211735-76e4b4a4-6647-4e39-
 
 - Install all necessary dependencies inside the project directory using npm install.
 
+## The link to the webpage.:
+
+[Valorant](https://ribotta-franco-valorant.vercel.app/#/)
+
 ## My social media:
 
-- [Linkedin](https://www.linkedin.com/in/franco-ribotta-274a211b0/)
-
 - [GitHub](https://github.com/franco7596)
+
+- [Linkedin](https://www.linkedin.com/in/franco-ribotta-274a211b0/)
