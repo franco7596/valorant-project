@@ -8,7 +8,8 @@ Whether you are a hardcore gamer or a casual player, this dynamic and interactiv
 
 ## Video
 
-https://user-images.githubusercontent.com/54074366/235211735-76e4b4a4-6647-4e39-94f8-5f4946708517.mp4
+![Valorant](https://user-images.githubusercontent.com/54074366/235226293-10d995bb-0df1-4b84-8a2d-2d64935e2428.gif)
+
 
 ## Running this project.
 - Open Git terminal.
