@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+## Valorant project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This personal project showcases my skills as a front-end developer and focuses on one of my favorite video games, Valorant. Using React.js, React Router, Redux, Redux-Saga, Axios, JavaScript, HTML5, and CSS3, this project connects with the [Valorant API](https://dash.valorant-api.com/) to retrieve important information on the game's heroes and maps.
 
-## Available Scripts
+Users can create their ideal team for a specific map and access statistics on the team's performance. The web page provides insight into whether the team is ideal for that specific map and highlights the strengths and weaknesses of the team. This feature provides users with valuable information that can improve their gaming strategy and increase their chances of success in the game.
 
-In the project directory, you can run:
+Whether you are a hardcore gamer or a casual player, this dynamic and interactive web page offers a visually appealing way to explore all the essential aspects of Valorant. As a passionate fan of Valorant, I made the decision to create this application as a way to showcase my love for one of my favorite video games. This project demonstrates my abilities as a front-end developer and my passion for the gaming world.
 
-### `npm start`
+## Video
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+https://user-images.githubusercontent.com/54074366/235211735-76e4b4a4-6647-4e39-94f8-5f4946708517.mp4
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Running this project.
+- Open Git terminal.
 
-### `npm test`
+- Change the current working directory to the location where you want to clone the directory. cd project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Type git clone followed by the project URL.
 
-### `npm run build`
+- git clone https://github.com/franco7596/valorant-project.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Press Enter to create your local clone.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY Cloning into Spoon-Knife... remote: Counting objects: 10, done. remote: Compressing objects: 100% (8/8), done. remove: Total 10 (delta 1), reused 10 (delta 1) Unpacking objects: 100% (10/10), done.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Install all necessary dependencies inside the project directory using npm install.
 
-### `npm run eject`
+## My social media:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [Linkedin](https://www.linkedin.com/in/franco-ribotta-274a211b0/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [GitHub](https://github.com/franco7596)
